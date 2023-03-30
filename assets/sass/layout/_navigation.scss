@@ -1,0 +1,59 @@
+nav {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 10%;
+
+  .startB {
+    color: black;
+  }
+
+  h3 {
+    &:hover {
+      color: rgb(244, 98, 58);
+    }
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    gap: 10%;
+    color: black;
+    list-style: none;
+
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        color: rgb(244, 98, 58);
+      }
+      transition: 0.5s;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger {
+    border: 0.5px solid gray;
+    border-radius: 25%;
+    padding: 10px;
+    display: block;
+  }
+
+  .nav_B {
+    display: none;
+  }
+}

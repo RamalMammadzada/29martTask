@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 10%;
+}
+nav .startB {
+  color: black;
+}
+nav h3 {
+  transition: 0.5s;
+  cursor: pointer;
+}
+nav h3:hover {
+  color: rgb(244, 98, 58);
+}
+nav ul {
+  display: flex;
+  gap: 10%;
+  color: black;
+  list-style: none;
+}
+nav ul a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav ul a:hover {
+  color: rgb(244, 98, 58);
+}
+
+.navigation {
+  display: flex;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger {
+    border: 0.5px solid gray;
+    border-radius: 25%;
+    padding: 10px;
+    display: block;
+  }
+  .nav_B {
+    display: none;
+  }
+}
+footer {
+  color: rgb(108, 117, 125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 249, 250);
+}
+footer p {
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+}
+
+.btn {
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+  background-color: brown;
+  color: white;
+  border-radius: 50px;
+  padding: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: rgb(129, 69, 69);
+}
+
+.btn2 {
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn2:hover {
+  background-color: gray;
+}
+
+.btn3 {
+  margin-bottom: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.5s;
+}
+.btn3:hover {
+  background-color: gray;
+}
+
+.btn4 {
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+  background-color: brown;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.FavB {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(/assets/img/bg-masthead.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.FavB h1 {
+  margin-bottom: 20px;
+  font-size: xxx-large;
+  color: white;
+  text-align: center;
+}
+.FavB .first_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.FavB p {
+  color: white;
+}
+
+hr {
+  margin-bottom: 20px;
+  width: 60px;
+  height: 3px;
+  border: none;
+  background-color: rgb(244, 98, 58);
+}
+
+.page_2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(244, 98, 58);
+}
+.page_2 .two_page {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.page_2 h3 {
+  color: white;
+}
+.page_2 p {
+  color: rgb(252, 216, 206);
+}
+.page_2 hr {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.page_3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.page_3 h3 {
+  margin-bottom: 50px;
+}
+.page_3 hr {
+  margin: auto;
+}
+
+.service_ {
+  text-align: center;
+}
+
+.icons {
+  margin-top: 50px;
+  display: flex;
+}
+.icons p {
+  color: rgb(108, 117, 125);
+  padding: 10px 30px;
+}
+.icons i {
+  color: rgb(244, 98, 83);
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.images_page {
+  background-color: rgb(33, 37, 41);
+}
+
+._images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+._images img {
+  flex-wrap: wrap;
+  width: 350px;
+  height: 300px;
+  margin: 10px 0;
+}
+
+._download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+._download h2 {
+  color: white;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sign p {
+  color: rgb(108, 117, 125);
+}
+.sign i {
+  font-size: xx-large;
+}
+.sign ._inputs {
+  text-align: center;
+  width: 40%;
+  height: 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.sign ._inputs:hover {
+  border: 2px solid brown;
+}
+.sign ._text {
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.sign ._text:hover {
+  border: 2px solid brown;
+}
+
+hr {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .page_3 .icons {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
